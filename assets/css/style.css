@@ -1,0 +1,122 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--c5);
+    
+}
+
+html {
+    /*Color palette:*/
+    --c1: #0d1b2a;
+    --c2: #1b263b;
+    --c3: #415a77;
+    --c4: #778da9;
+    --c5: #e0e1dd;
+    
+}
+
+/*HEADER*/
+
+header{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--c2);
+    color:white;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    
+}
+
+
+header img{
+    border-radius: 50%;
+    width: 15%;
+
+
+}
+
+header ul{
+    list-style:none;
+    display:flex;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    margin: 0 70px;
+    font-size: 200%;
+
+}
+
+header h1{
+    font-size: 500%;
+}
+
+
+/*BODY*/
+
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/*CARDS*/
+
+.card{
+    color: var(--c5);
+    margin: 50px 50px;
+    display:relative;
+    width: 80%;
+    text-align:center;
+    background-color: var(--c3);
+    border-radius: 25px;
+
+    
+}
+
+.card h2{
+    font-size: 200%;
+}
+
+.card a{
+    text-decoration:none;
+}
+
+/*Portfolio Section*/
+
+#work-list{
+    display:flex;
+    list-style:none;
+}
+
+#work-list img{
+    border: var(--c1) solid 10px;
+}
+
+#work-list li{
+    position:relative;
+    text-align:left;
+}
+
+#work-list h3{
+    position:absolute;
+    background-color:var(--c1);
+    min-width: 150px;
+    bottom:30px;
+    left:10px;
+    margin-bottom:0px;
+    border: 5px 0;
+    padding:10px;
+}
+
+#forest-keeper::after{
+    content:'C# for Unity';
+    font-size: 50%;
+    display:block;
+}
+
+

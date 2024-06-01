@@ -2,11 +2,12 @@
     <head>
         <title>Olivia Te Kolste - Web Developer</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        
     </head>
 
     <header>
-        <h1>Olivia Te Kolste</h1>
         <img src="./assets/images/headshot.jpg" alt="A professional headshot of Olivia Te Kolste.">
+        <h1>Olivia Te Kolste</h1>
         <ul>
             <li> <a href="#about">ABOUT</a></li>
             <li> <a href="#work">MY WORK</a></li>
@@ -15,15 +16,23 @@
     </header>
 
     <body>
-        <section id="about">
-            I am a full stack developer based in North Carolina.
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>I am a full stack developer based in North Carolina.</p>
         </section>
-        <section id="work">
-            <ul>
-                <a href="https://github.com/otekolste/cosquest">Cosquest</a>
+        <section id="work" class="card">
+            <h2>Recent Works</h2>
+            <ul id="work-list">
+                <li>
+                    <a href="https://princepszortch.itch.io/forestkeeper" target="_blank">
+                        <img src="./assets/images/forestkeeper-icon.png" alt="A cartoon bug standing in grass, holding a stick." id="forest-keeper">
+                        <h3 id="forest-keeper">Forest Keeper</h3>
+                    </a>
+                </li>
             </ul>
         </section>
-        <section id="contact">
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
             <p>
                 Email: oliviatekolste@gmail.com
             </p>
