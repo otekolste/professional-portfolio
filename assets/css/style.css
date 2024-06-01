@@ -69,7 +69,6 @@ body{
 .card{
     color: var(--c5);
     margin: 50px 50px;
-    display:relative;
     width: 80%;
     text-align:center;
     background-color: var(--c3);
@@ -88,21 +87,26 @@ body{
 
 /*Portfolio Section*/
 
-#work-list{
+.work-list{
     display:flex;
     list-style:none;
+    flex-wrap:wrap;
 }
 
-#work-list img{
-    border: var(--c1) solid 10px;
-}
-
-#work-list li{
+.ex{    
+    margin: 10px 0;
     position:relative;
-    text-align:left;
+    display: flex;
+    flex: 0 0 20%;
+
 }
 
-#work-list h3{
+
+.work-list img{
+    border: var(--c1) solid 10px; 
+}
+
+.work-list h3{
     position:absolute;
     background-color:var(--c1);
     min-width: 150px;
@@ -112,6 +116,7 @@ body{
     border: 5px 0;
     padding:10px;
 }
+
 
 #forest-keeper::after{
     content:'C# for Unity';
