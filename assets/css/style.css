@@ -6,6 +6,17 @@
     --lightBlue: #CDE8E5;
 }
 
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/webfontkit-20240601-161344/raleway-medium-webfont.woff2') format('woff2'), 
+         url('../fonts/webfontkit-20240601-161344/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-family: 'raleway','Courier New', Courier, monospace;
+}
 
 /*  HEADER  */
 
@@ -29,12 +40,16 @@ header a{
     color:var(--lightestBlue);
 }
 
+header a:hover{
+    color:var(--midTeal);
+}
+
 header h1{
     display:inline;
     padding: 5px 5px 5px 30px;
     color: var(--darkTeal);
     background-color: var(--lightestBlue);
-    font-size: 200%;
+    font-size: 300%;
 
 }
 
@@ -67,20 +82,32 @@ body{
     margin-bottom: 100px;
 }
 
+.infoblock h2 {
+    font-size: 200%;
+    float:left;
+    margin-right: 40px;
+    color: var(--darkTeal);
+}
+
+
+/* PORTFOLIO STYLING */
 
 .work-list{
     display:flex;
     flex-wrap: wrap;
-    justify-content:center;
+    width: 800px;
+    row-gap: 25px;
+    justify-content: center;
     align-items: center;
-    max-width: 800px;
 
 }
 
 .ex{
     width: 400px;
     height: 250px;
-    flex: none;
+    flex: 0 0 46%;
+    position:relative;
+    margin:auto;
 
 }
 
@@ -88,11 +115,34 @@ body{
     width:100%;
     height:100%;
     object-fit: cover;
+    border: var(--darkTeal) 10px solid;
 }
 
-#prime{
-    flex-basis: 800px;
+.ex img:hover{
+    filter:grayscale(1.3);
 }
+
+
+#prime{
+    flex: 1 0 100%;
+}
+
+.ex h3{
+    text-decoration:none;
+    background-color: var(--darkTeal);
+    display:inline;
+    position:absolute;
+    left:0;
+    top:50%;
+    font-size: 150%;
+    color:var(--lightestBlue);
+    margin-left: 10px;
+    padding: 7px;
+    
+}
+
+
+
 
 
 
