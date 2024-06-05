@@ -6,10 +6,8 @@
     --lightBlue: #CDE8E5;
 }
 
-*{
-    margin:0;
-    padding:0;
-}
+
+/*  HEADER  */
 
 header{
     width:100%;
@@ -35,6 +33,45 @@ header h1{
     display:inline;
     padding: 5px 5px 5px 30px;
     color: var(--darkTeal);
-    background-color: var(--lightestBlue)
+    background-color: var(--lightestBlue);
+    font-size: 200%;
 
 }
+
+/* BODY */
+
+body{
+    background-color: var(--lightestBlue);
+}
+
+/* HERO */
+
+.hero{
+
+/* Code referenced from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+  background-image: url("../images/computerImg.jpg");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 100px;
+
+}
+
+/* MAIN INFO SECTIONS */
+
+.infoblock{
+    position:relative;
+    margin-left: 20%;
+    margin-bottom: 100px;
+}
+
+
+.work-list{
+    display:flex;
+}
+
+
+
+
