@@ -24,24 +24,7 @@ header{
     width:100%;
     background-color: var(--darkTeal);
     color:var(--lightestBlue);
-}
 
-header ul{
-    text-align:end;
-    padding-bottom: 20px;
-}
-
-header li{
-    display:inline;
-    margin-right: 20px;
-}
-
-header a{
-    color:var(--lightestBlue);
-}
-
-header a:hover{
-    color:var(--midTeal);
 }
 
 header h1{
@@ -53,26 +36,54 @@ header h1{
 
 }
 
+/* NAV BAR */
+
+nav{
+    background-color: var(--darkTeal);
+    display:flex;
+    justify-content:end;
+    padding-bottom: 20px;
+}
+
+nav a{
+    color:var(--lightestBlue);
+    text-decoration:none;
+    margin: 10px 10px 0px 40px;
+
+    
+}
+
+nav a:hover{
+    color:var(--midTeal);
+}
+
+.hero{
+
+    /* Code referenced from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+      background-image: url("../images/computerImg.jpg");
+      height: 200px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-bottom: 100px;
+    
+    }
+
+
+
 /* BODY */
 
 body{
     background-color: var(--lightestBlue);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;    
 }
 
 /* HERO */
 
-.hero{
 
-/* Code referenced from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
-  background-image: url("../images/computerImg.jpg");
-  height: 20%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 100px;
-
-}
 
 /* MAIN INFO SECTIONS */
 
@@ -80,14 +91,16 @@ body{
     position:relative;
     margin-left: 20%;
     margin-bottom: 100px;
+    display:flex;
+    align-items: center;
+    border-left: 5px solid var(--midTeal);
+    padding-left: 25px;
+
 }
 
-.infoblock h2 {
-    font-size: 200%;
-    float:left;
-    margin-right: 40px;
-    color: var(--darkTeal);
-}
+/* INFOBLOCK HEADINGS */
+
+
 
 
 /* PORTFOLIO STYLING */
@@ -139,6 +152,18 @@ body{
     margin-left: 10px;
     padding: 7px;
     
+}
+
+/* QUERIES TO RESPOND TO SCREEN SIZE */
+
+@media screen and (max-width: 768px){
+    .work-list, nav{
+        flex-direction:column;
+    }
+
+
+
+
 }
 
 
