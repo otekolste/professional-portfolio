@@ -18,7 +18,7 @@ html{
     font-family: 'raleway','Courier New', Courier, monospace;
 }
 
-/*  HEADER  */
+/* ---------- HEADER ---------- */
 
 header{
     width:100%;
@@ -36,7 +36,8 @@ header h1{
 
 }
 
-/* NAV BAR */
+
+/* ---------- NAV BAR ----------*/
 
 nav{
     background-color: var(--darkTeal);
@@ -59,7 +60,7 @@ nav a:hover{
     color:var(--lightBlue);
 }
 
-/* HERO */
+/* ---------- HERO ---------- */
 
 .hero{
 
@@ -76,7 +77,7 @@ nav a:hover{
 
 
 
-/* BODY */
+/* ---------- BODY ----------*/
 
 body{
     background-color: var(--lightestBlue);
@@ -92,7 +93,7 @@ body{
 
 
 
-/* MAIN INFO SECTIONS */
+/* ---------- MAIN INFO SECTIONS ---------- */
 
 .infoblock{
     position:relative;
@@ -100,6 +101,9 @@ body{
     display:flex;
     align-items: flex-start;
     margin-left: 30%;
+    margin-right: 10%;
+    line-height: 2.0;
+    font-size: 115%;
 
 
 
@@ -115,14 +119,21 @@ body{
     position:absolute;
     font-size: 200%;
     color: var(--darkTeal);
-    left: -200px;
+    left: -225px;
 
 
 }
 
+#about img{
+    width: 200px;
+    float:left;
+    margin-right: 20px;
+    border: 5px solid var(--midTeal);
+}
 
 
-/* PORTFOLIO STYLING */
+
+/* ---------- PORTFOLIO STYLING ---------- */
 
 .work-list{
     display:flex;
@@ -171,7 +182,18 @@ body{
     
 }
 
-/* CONTACT SECTION */
+#forest-keeper::after{
+    content: 'C# for Unity 2D';
+    font-size: 50%;
+    position:absolute;
+    left: 0;
+    top: 65%;
+    margin-left: 10px;
+
+
+}
+
+/* ---------- CONTACT SECTION ---------- */
 #contact a{
     color: var(--darkTeal);
 }
@@ -185,7 +207,7 @@ body{
     color:var(--midTeal);
 }
 
-/* QUERIES TO RESPOND TO SCREEN SIZE */
+/* ---------- QUERIES TO RESPOND TO SCREEN SIZE ---------- */
 
 @media screen and (max-width: 768px){
     .infoblock h2{
