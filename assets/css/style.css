@@ -48,13 +48,15 @@ nav{
 nav a{
     color:var(--lightestBlue);
     text-decoration:none;
+    font-style:bold;
     margin: 10px 10px 0px 40px;
+    font-size: 150%;
 
     
 }
 
 nav a:hover{
-    color:var(--midTeal);
+    color:var(--lightBlue);
 }
 
 /* HERO */
@@ -169,6 +171,20 @@ body{
     
 }
 
+/* CONTACT SECTION */
+#contact a{
+    color: var(--darkTeal);
+}
+#contact h3{
+    display:inline;
+    margin: 0 20px;
+    color: var(--darkTeal);
+    font-size: 150%;
+}
+#contact a:hover{
+    color:var(--midTeal);
+}
+
 /* QUERIES TO RESPOND TO SCREEN SIZE */
 
 @media screen and (max-width: 768px){
@@ -181,6 +197,9 @@ body{
     }
     .infoblock{
         margin-left: 10%;
+    }
+    #contact a{
+        display:block;
     }
 
 
