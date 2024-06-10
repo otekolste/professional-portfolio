@@ -15,6 +15,8 @@ Go [here](https://otekolste.github.io/professional-portfolio) to check it out!
 
 [Code referenced for creating the hero section](https://www.w3schools.com/howto/howto_css_hero_image.asp)
 
+[Reset sheet](https://meyerweb.com/eric/tools/css/reset/)
+
 ### Images used:
 [Coming soon image](https://www.flickr.com/photos/p22earl/2032041314)
 
